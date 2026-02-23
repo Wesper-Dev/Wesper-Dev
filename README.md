@@ -215,16 +215,6 @@ Full-stack multiplayer Pong game
 
 <div align="center">
 
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=Wesper-Dev&show_icons=true&theme=radical&hide_border=true&include_all_commits=true&count_private=true" />
-<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Wesper-Dev&layout=compact&theme=radical&hide_border=true&langs_count=10" />
-
-<br/>
-
-<!-- Trophées -->
-<img src="https://github-profile-trophy.vercel.app/?username=Wesper-Dev&theme=radical&no-frame=true&no-bg=true&column=7&margin-w=5" />
-
-<br/>
-
 <!-- 🐍 Snake eating contributions -->
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Wesper-Dev/Wesper-Dev/output/github-snake-dark.svg" />
