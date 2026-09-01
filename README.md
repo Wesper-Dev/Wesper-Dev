@@ -14,7 +14,7 @@ Trained at École 42 (Paris) in C, UNIX/POSIX, networking and concurrency. That 
 - The tool dispatcher is allow-listed: instead of the usual `globals()[name](**args)`, the code recomputes the expected arguments and rejects any call that differs. Two tests lock this down — reading a `.env` is refused, and personal data passed as a tool argument is refused.
 - 121 deterministic tests run in under 0.05 s, with no network and no Ollama. CI on Python 3.10 to 3.13.
 - An unknown airport code returns `needs_information` — never an approximate distance.
-- `docs/EVALUATION.md` holds a test that fails if the documented numbers drift. That guard silently verified nothing in CI for several weeks; it is written up in the repo, with what I changed since.
+- `docs/EVALUATION.md` is the single source of truth for the numbers, and holds `test_documented_test_count_is_accurate`, which fails if the documented count drifts from the real one. Separately, the zero-dependency guard verified nothing until 28 July 2026 — that is written up in the repo, with what changed since.
 
 To check it yourself: `git clone https://github.com/Wesper-Dev/droit-de-retard && cd droit-de-retard && make test`
 
