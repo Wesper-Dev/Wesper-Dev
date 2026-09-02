@@ -57,4 +57,4 @@ Co-Lead Organizer of **GDG on Campus 42 Paris**, with Colin Peugnet.
 
 An AI Platform / Applied AI engineering role on systems where execution has to be isolated, measured and defensible. Available from 16 October 2026.
 
-French native · English C1 · Spanish B2 · [LinkedIn](https://www.linkedin.com/in/arnaud-durand42)
+French native · fluent English · conversational Spanish · [LinkedIn](https://www.linkedin.com/in/arnaud-durand42)
