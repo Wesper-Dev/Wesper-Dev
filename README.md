@@ -33,3 +33,8 @@ A C2 coordination layer for counter-drone defence, at a defence hackathon in Jun
 **What I am looking for.** A permanent role in AI platform or applied AI engineering, from 16 October 2026, where execution has to be isolated, measured and defensible. Not prompt-only work, and not anything that ships model output without a deterministic check in front of it.
 
 Best way to reach me: [LinkedIn](https://www.linkedin.com/in/arnaud-durand42). French native, fluent English, conversational Spanish.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Wesper-Dev/Wesper-Dev/output/github-snake-dark.svg">
+  <img alt="A snake crossing my GitHub contribution graph, eating the squares one by one. Regenerated daily by a GitHub Action and committed to this repository." src="https://raw.githubusercontent.com/Wesper-Dev/Wesper-Dev/output/github-snake.svg">
+</picture>
