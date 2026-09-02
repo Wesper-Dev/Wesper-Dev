@@ -1,60 +1,35 @@
-## Arnaud Durand
+**AI Platform / Applied AI Engineer, Paris.** Permanent role from 16 October 2026, when my BPCE internship ends.
 
-AI Platform / Applied AI Engineer. I build LLM systems for contexts where a model output triggers a decision that costs something, and where the data must not leave the machine.
+**[droit-de-retard](https://github.com/Wesper-Dev/droit-de-retard)** turns a photo of a boarding pass into an EU261 flight-compensation claim. 121 deterministic tests, no network, no install step.
 
-The rule I apply everywhere: **the model proposes, the code decides — and what the code decides is tested, offline, on every commit.**
+Clone it, `cd` in, and run:
 
-Trained at École 42 (Paris) in C, UNIX/POSIX, networking and concurrency. That is where the deterministic half of my work comes from. An agent that has to run without a network, refuse cleanly and re-check itself is a systems problem before it is a prompt problem.
+```console
+$ python3 -m unittest discover
+...
+Ran 121 tests in 0.114s
 
-## Start here
+OK
+```
 
-**[droit-de-retard](https://github.com/Wesper-Dev/droit-de-retard)** — a local-first agent that prepares an EU261 flight compensation claim from a photo or PDF of a boarding pass.
+No `requirements.txt`, no virtualenv, no model running — a clean clone on the system Python. Your timing will differ; the 121 and the `OK` will not. CI runs the same suite on Python 3.10 to 3.13.
 
-- The model reads the ticket. The code computes eligibility, amount and refusal, in deterministic Python, with CJEU case law encoded.
-- The tool dispatcher is allow-listed: instead of the usual `globals()[name](**args)`, the code recomputes the expected arguments and rejects any call that differs. Two tests lock this down — reading a `.env` is refused, and personal data passed as a tool argument is refused.
-- 121 deterministic tests run in under 0.05 s, with no network and no Ollama. CI on Python 3.10 to 3.13.
-- An unknown airport code returns `needs_information` — never an approximate distance.
-- `docs/EVALUATION.md` is the single source of truth for the numbers, and holds `test_documented_test_count_is_accurate`, which fails if the documented count drifts from the real one. Separately, the zero-dependency guard verified nothing until 28 July 2026 — that is written up in the repo, with what changed since.
+The model reads the ticket; Python decides eligibility, amount and refusal, with CJEU case law encoded. The tool dispatcher is allow-listed: instead of `globals()[name](**args)` it recomputes the expected arguments and rejects any call that differs — two tests hold it shut, one for reading a `.env`, one for personal data passed as a tool argument. An unknown airport code returns `needs_information`, not a guess.
 
-To check it yourself: `git clone https://github.com/Wesper-Dev/droit-de-retard && cd droit-de-retard && make test`
+The model runs locally through Ollama, and the one network tool is a minimised search the system does without when it is unavailable. `docs/EVALUATION.md` is the single source for the published figures, and carries `test_documented_test_count_is_accurate`, which fails if the documented count drifts from the real one.
 
-## Other work
+The model proposes, the code decides — and what the code decides is tested, offline, on every commit.
 
-**Pokémon Gemma Agent** — an agent harness driving `gemma4:12b` through Pokémon Emerald autonomously, with an explicit, non-negotiable line between what the harness executes and what the model decides. 875 tests, 18 dated architecture decisions, and an engineering journal that is never rewritten — including where a later measurement disproved an earlier entry. Ablation result: on an identical harness, a frontier model succeeds where the 12B model confabulates, which isolates knowledge rather than mechanism as the bottleneck. *Private repository for now; happy to walk through it.*
+The repo also records that its own zero-dependency CI guard verified nothing until 1 August 2026: the green badge of that period did not certify what it appeared to certify. And it records where the project comes from. It started as [a three-person hackathon project](https://github.com/Claken/Paris-Gemma-4-Hackaton) at the Gemma 4 Hackathon in Paris, 25–28 July 2026, and [the demo video](https://www.youtube.com/watch?v=tOn7xXNZ6s0) is the team's. I carried it into my own repository and hardened it there; the tests, the refusals and that CI fix are mine.
 
-**C2 coordination for counter-drone defence** — European Tech Defence Hackathon, Paris, June 2026. A centralised command-and-control layer assigning three interceptor systems against simultaneous drone threats and decoys, in a deterministic simulation with a seeded benchmark comparing a global assignment policy to a greedy baseline. *Private team repository.*
+**Now.** AI platform engineering at BPCE: sandboxing and isolated execution of agent tools on Kubernetes/OpenShift, with containerised execution and namespace separation. It is an internal proof of concept. Before that, Data Scientist intern at BNP Paribas, IT Group Experimentation Lab — a multi-threaded document analysis pipeline, and Langfuse deployed fully on-premise across 75+ Docker containers for LLM cost and trace monitoring. The measured gains are internal to BNP and are not published.
 
-## Systems, École 42
+**Where the deterministic half comes from.** École 42 Paris, 2019–2024: C, UNIX/POSIX, networking, concurrency. [Minishell](https://github.com/Wesper-Dev/Minishell) is a POSIX shell built from the system calls up; [Philosophers](https://github.com/Wesper-Dev/Philosophers) is threads and mutexes with no deadlock and no starvation; [Inception](https://github.com/Wesper-Dev/Inception) is NGINX/TLS, WordPress with PHP-FPM and MariaDB across three hand-written Dockerfiles. An agent that has to run offline, refuse cleanly and re-check itself is a systems problem before it is a prompt problem.
 
-- **[Minishell](https://github.com/Wesper-Dev/Minishell)** — POSIX shell in C: lexer, parser, pipes, redirections, heredocs, signals, builtins.
-- **[Inception](https://github.com/Wesper-Dev/Inception)** — NGINX/TLS, WordPress + PHP-FPM and MariaDB across three hand-written Dockerfiles.
-- **[Philosophers](https://github.com/Wesper-Dev/Philosophers)** — POSIX threads and mutexes, no deadlock or starvation, death detection under 10 ms.
-- **[Pipex](https://github.com/Wesper-Dev/Pipex)** — `cmd1 < infile | cmd2 > outfile` in C: pipe(), fork(), dup2(), execve, PATH resolution.
+**Also.** A private harness driving `gemma4:12b` through Pokémon Emerald autonomously, with an explicit line between what the harness executes and what the model decides: 875 tests, 18 dated architecture decisions, and an engineering journal that is never rewritten. On an identical harness a frontier model succeeds where the 12B confabulates — so the bottleneck is knowledge, not mechanism.
 
-## Experience
+A C2 coordination layer for counter-drone defence, at a defence hackathon in June 2026, in a private repository I do not own. A first-aid training platform for the French Red Cross, as a volunteer, shown at ChangeNow 2025: retrieval over 700+ pages of manuals, Next.js / FastAPI / PostgreSQL. Climate downscaling at GenHack 4, École polytechnique, November 2025 — RMSE from 2.45 °C to 1.24 °C, 9 km down to 80 m, on ERA5 and Sentinel-2. A robotic arm playing Connect 4 at the Hugging Face LeRobot hackathon, June 2025 — an Action Chunking Transformer on a hand-built demonstration set, board detection on 150 hand-labelled images. Co-lead organiser of [GDG on Campus 42 Paris](https://gdg.community.dev/gdg-on-campus-42-paris-paris-france/).
 
-- **AI Platform Engineering Intern, BPCE** — until 16 October 2026. Building the isolation layer of an internal proof-of-concept platform for agent execution on Kubernetes/OpenShift: containerised execution with namespace separation, evaluating Kata Containers and Podman for stronger isolation. Python.
-- **Data Scientist Intern, BNP Paribas** — IT Group Experimentation Lab. Multi-threaded document analysis pipeline. Deployed Langfuse fully on-premise across 75+ Docker containers for LLM cost and trace monitoring. Measured gains are internal; I go through them in interviews.
-- **Full-stack AI developer, French Red Cross** *(volunteer)* — first-aid training platform: LightRAG over 700+ pages, Socratic scenarios, Next.js / FastAPI / PostgreSQL. Shown at ChangeNow 2025.
+**What I am looking for.** A permanent role in AI platform or applied AI engineering, from 16 October 2026, where execution has to be isolated, measured and defensible. Not prompt-only work, and not anything that ships model output without a deterministic check in front of it.
 
-## Hackathons
-
-Titled by the technical result, not by the ranking.
-
-- **GenHack 4**, École polytechnique (Nov 2025) — climate downscaling: RMSE from 2.45 °C to 1.24 °C, 9 km → 80 m, residual ML pipeline on ERA5 + Sentinel-2.
-- **LeRobot, Hugging Face @ 42** (June 2025) — robotic arm playing Connect 4: Action Chunking Transformer on a hand-built demonstration dataset, YOLOv5 board detection.
-- **ShipFast × Unaite × 42AI** (July 2025) — emergency call assistance. My commits are in the team's upstream repository.
-
-## Community
-
-Co-Lead Organizer of **GDG on Campus 42 Paris**, with Colin Peugnet.
-
-## Education
-
-**École 42 Paris** — 2019 to 2024. C/C++, UNIX/POSIX, networking, concurrent programming.
-
-## Looking for
-
-An AI Platform / Applied AI engineering role on systems where execution has to be isolated, measured and defensible. Available from 16 October 2026.
-
-French native · fluent English · conversational Spanish · [LinkedIn](https://www.linkedin.com/in/arnaud-durand42)
+Best way to reach me: [LinkedIn](https://www.linkedin.com/in/arnaud-durand42). French native, fluent English, conversational Spanish.
