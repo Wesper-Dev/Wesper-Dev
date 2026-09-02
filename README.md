@@ -34,7 +34,7 @@ A C2 coordination layer for counter-drone defence, at a defence hackathon in Jun
 
 Best way to reach me: [LinkedIn](https://www.linkedin.com/in/arnaud-durand42). French native, fluent English, conversational Spanish.
 
-<img src="assets/cat.gif" width="180" alt="A black cat sitting at a table, typing fast on a laptop.">
+<img src="assets/cat.gif" width="360" alt="A black cat sitting at a table, typing fast on a laptop.">
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Wesper-Dev/Wesper-Dev/output/github-snake-dark.svg">
