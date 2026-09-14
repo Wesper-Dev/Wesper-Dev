@@ -1,36 +1,34 @@
-# Arnaud Durand
+# Hi, I'm Arnaud
 
 **AI Platform / Applied AI Engineer · Paris, France**
 
-I build AI tools with a systems engineering foundation: Python, C, Linux, and a focus on how agents call tools, handle failures, and get evaluated. I am a student at École 42 Paris, currently completing an AI platform engineering internship at BPCE that ends on **16 October 2026**. I am looking for a permanent role after the internship.
+I build AI tools and enjoy understanding what happens underneath: how a process runs, how an agent uses a tool, and what happens when something fails. My foundations are Python, C and Linux, shaped by projects at École 42 Paris.
 
-**[Contact me on LinkedIn](https://www.linkedin.com/in/arnaud-durand42/)** · [Email](mailto:arnaud.durand97@gmail.com)
+I like learning with other people, whether we're trying an idea at a hackathon, organising a developer event or working through a difficult problem together. My projects have taken me from UNIX shells to voice journals and first-aid training.
 
-## Selected projects
+## Things I've been building
 
-**[droit-de-retard](https://github.com/Wesper-Dev/droit-de-retard)** — A local-first prototype that prepares flight-compensation claims from travel documents. I continued a [three-person hackathon project](https://github.com/Claken/Paris-Gemma-4-Hackaton), adding deterministic tool-call validation, regression tests, and CI checks. The model extracts information; Python handles the eligibility rules and calculations. The repository documents the evaluation scope, limitations, and commands to reproduce the tests.
+**[droit-de-retard](https://github.com/Wesper-Dev/droit-de-retard)** — A local-first prototype that prepares flight-compensation claims from travel documents. Continuing a [team hackathon project](https://github.com/Claken/Paris-Gemma-4-Hackaton), I added deterministic tool-call validation, regression tests and CI checks, with Python handling the rules and calculations.
 
-**[Diary](https://github.com/Wesper-Dev/Diary)** — An audio-journal proof of concept connecting browser recording, a FastAPI backend, audio conversion, and cloud storage. My implementation connects recordings to the upload and weekly-report workflow, with an explicit analysis opt-in. It brings together Python, React/TypeScript, FFmpeg, and Docker; the repository also documents an ARM64 build path for Raspberry Pi.
+**[Diary](https://github.com/Wesper-Dev/Diary)** — A voice-journal prototype and my personal continuation of Kura, a team project developed across two hackathons. I connected browser recordings to audio conversion, cloud storage and weekly reports, with explicit opt-in for analysis.
 
-**[Minishell](https://github.com/Wesper-Dev/Minishell)** — A shell project in C from my 42 curriculum. I worked on command execution, pipes, redirections, and process handling using UNIX system calls. It is a concrete example of the lower-level programming behind my interest in AI infrastructure: managing state, resources, and failure paths explicitly.
+**[Minishell](https://github.com/Wesper-Dev/Minishell)** — A shell written in C as part of the 42 curriculum. I worked on command execution, pipes, redirections and process handling using UNIX system calls.
 
-## Experience
+## Beyond the repositories
 
-**BPCE · AI Platform Engineering Intern** — Working on an internal proof of concept for sandboxing and isolated execution of agent tools in a Kubernetes / OpenShift environment.
+I co-organise [GDG on Campus 42 Paris](https://gdg.community.dev/gdg-on-campus-42-paris-paris-france/) and have spent 3+ years leading and coaching at Fitness 42. I'm also involved in [CITOY.ENS](https://citoyens-website.cdn.dgnum.eu/), a conferences and debates association, where I've attended talks and suggested speakers.
 
-**BNP Paribas · Data Scientist Intern** — Worked on document-analysis pipelines and on-premise LLM observability with Langfuse and Docker in an experimentation lab.
+I contributed as a volunteer to the AI layer and problem framing of a [French Red Cross training project](https://github.com/Wesper-Dev/CroixRouge-Hackathon). Professionally, I'm completing an AI platform internship at BPCE, following a Data Scientist internship at BNP Paribas.
 
-**French Red Cross · Volunteer** — Contributed to part of the AI layer of a first-aid training platform and helped frame the problem with Red Cross trainers. The team presented the platform at ChangeNow 2025.
+**I'm looking for a permanent role in applied AI or AI platforms after my internship ends on 16 October 2026.** Happy to talk about a project, an opportunity or something you're building.
 
-## Community
+French native; English fluent; Spanish B1.
 
-I co-organise [GDG on Campus 42 Paris](https://gdg.community.dev/gdg-on-campus-42-paris-paris-france/). Hackathons have also let me explore voice interfaces, robotics, and climate data with people from different backgrounds.
-
-I am interested in roles that combine applied AI with software engineering, evaluation, and reliable execution. I speak French and fluent English.
+[Portfolio](https://wesper-dev.github.io/) · [Email me](mailto:arnaud.durand97@gmail.com) · [LinkedIn](https://www.linkedin.com/in/arnaud-durand42/)
 
 <img src="assets/cat.gif" width="360" alt="A black cat sitting at a table, typing fast on a laptop.">
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Wesper-Dev/Wesper-Dev/output/github-snake-dark.svg">
-  <img alt="A snake crossing my GitHub contribution graph, eating the squares one by one. Regenerated daily by a GitHub Action and committed to this repository." src="https://raw.githubusercontent.com/Wesper-Dev/Wesper-Dev/output/github-snake.svg">
+  <img alt="A snake crossing my GitHub contribution graph, eating the squares one by one." src="https://raw.githubusercontent.com/Wesper-Dev/Wesper-Dev/output/github-snake.svg">
 </picture>
