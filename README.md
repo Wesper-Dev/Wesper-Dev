@@ -1,6 +1,6 @@
 # Hi, I'm Arnaud
 
-**AI Platform / Applied AI Engineer · Paris, France**
+**Applied AI Engineer · Paris, France**
 
 I build AI tools and enjoy understanding what happens underneath: how a process runs, how an agent uses a tool, and what happens when something fails. My foundations are Python, C and Linux, shaped by projects at École 42 Paris.
 
@@ -18,7 +18,7 @@ I like learning with other people, whether we're trying an idea at a hackathon, 
 
 I co-organise [GDG on Campus 42 Paris](https://gdg.community.dev/gdg-on-campus-42-paris-paris-france/) and have spent 3+ years leading and coaching at Fitness 42. I'm also involved in [CITOY.ENS](https://citoyens-website.cdn.dgnum.eu/), a conferences and debates association, where I've attended talks and suggested speakers.
 
-I contributed as a volunteer to the AI layer and problem framing of a [French Red Cross training project](https://github.com/Wesper-Dev/CroixRouge-Hackathon). Professionally, I'm completing an AI platform internship at BPCE, following a Data Scientist internship at BNP Paribas.
+As a volunteer, I co-built the AI layer of a first-aid training platform used by 50+ French Red Cross volunteers: RAG over a 700-page manual and a Socratic coach. Professionally, I'm completing an AI platform internship at BPCE, following a Data Scientist internship at BNP Paribas.
 
 **I'm looking for a permanent role in applied AI or AI platforms after my internship ends on 16 October 2026.** Happy to talk about a project, an opportunity or something you're building.
 
