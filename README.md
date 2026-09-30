@@ -8,19 +8,19 @@ I like learning with other people, whether we're trying an idea at a hackathon, 
 
 ## Things I've been building
 
-**[droit-de-retard](https://github.com/Wesper-Dev/droit-de-retard)** — A local-first prototype that prepares flight-compensation claims from travel documents. Continuing a [team hackathon project](https://github.com/Claken/Paris-Gemma-4-Hackaton), I added deterministic tool-call validation, regression tests and CI checks, with Python handling the rules and calculations.
+**[droit-de-retard](https://github.com/Wesper-Dev/droit-de-retard)**: a local-first prototype that prepares flight-compensation claims from travel documents. Continuing a [team hackathon project](https://github.com/Claken/Paris-Gemma-4-Hackaton), I added deterministic tool-call validation, regression tests and CI checks, with Python handling the rules and calculations.
 
-**[Diary](https://github.com/Wesper-Dev/Diary)** — A voice-journal prototype and my personal continuation of Kura, a team project developed across two hackathons. I connected browser recordings to audio conversion, cloud storage and weekly reports, with explicit opt-in for analysis.
+**[Diary](https://github.com/Wesper-Dev/Diary)**: a voice-journal prototype and my personal continuation of Kura, a team project developed across two hackathons. I connected browser recordings to audio conversion, cloud storage and weekly reports, with explicit opt-in for analysis.
 
-**[Minishell](https://github.com/Wesper-Dev/Minishell)** — A shell written in C as part of the 42 curriculum. I worked on command execution, pipes, redirections and process handling using UNIX system calls.
+**[Minishell](https://github.com/Wesper-Dev/Minishell)**: a shell written in C as part of the 42 curriculum. I worked on command execution, pipes, redirections and process handling using UNIX system calls.
 
 ## Beyond the repositories
 
 I co-organise [GDG on Campus 42 Paris](https://gdg.community.dev/gdg-on-campus-42-paris-paris-france/) and have spent 3+ years leading and coaching at Fitness 42. I'm also involved in [CITOY.ENS](https://citoyens-website.cdn.dgnum.eu/), a conferences and debates association, where I've attended talks and suggested speakers.
 
-As a volunteer, I co-built the AI layer of a first-aid training platform used by 50+ French Red Cross volunteers: RAG over a 700-page manual and a Socratic coach. Professionally, I'm completing an AI platform internship at BPCE, following a Data Scientist internship at BNP Paribas.
+As a volunteer with the French Red Cross, I built the front end of a chatbot for first-aiders and co-built its RAG over a 700-page manual at a hackathon, then spent six months on the team's training app (front end, back end, flashcards, help on the Socratic coach). It was tested with about 50 first-aiders. Professionally, I'm finishing an AI platform internship at BPCE, following a Data Scientist internship at BNP Paribas.
 
-**I'm looking for a permanent role in applied AI or AI platforms after my internship ends on 16 October 2026.** Happy to talk about a project, an opportunity or something you're building.
+**I'm looking for a permanent role in applied AI or AI platforms from 16 October 2026, when my internship ends.** Happy to talk about a project, an opportunity or something you're building.
 
 French native; English fluent; Spanish B1.
 
